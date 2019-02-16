@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Comparison Page</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <style>
+            .navbar{
+            margin-bottom:0;
+            border-radius:0;
+            }
+            .navbar-default .navbar-brand {
+            color: rgb(0, 0, 0);
+            }
+            .img-1 {
+            width: 50%;
+            height: auto;
+            float: left;
+            }
+            .img-2 {
+            width: 90%;
+            height: auto;
+            float: left;
+            }
+            footer{
+            display: table;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            }
+            .row{
+            padding: 4rem;
+            }
+            .navbar {
+            background-color: #59cce9;
+            }
+            .navbar-brand {
+            background-color: lightblue;
+            color: black;
+            border-radius: 1px;
+            }
+            .navbar-brand:hover {
+            background-color: rgb(155, 129, 94);
+            color:black;
+            }
+            /* screens larger than sm */
+            @media screen and (min-width: 576px){
+            .navbar {
+            background-color: lightblue;
+            }
+            .navbar-brand {
+            background-color: #93bdbe;
+            color: black;
+            border-radius: 1px;
+            }
+            .navbar-brand:hover {
+            background-color: #8ac6ce;
+            color:black;
+            }
+            }
+        </style>
+    </head>
+    <body bgcolor="#D3D3D3">
+        <!--NAVBAR-->
+        <!-- Static navbar -->
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" style="background-color: #0BADA6;" href="index.html">Latitude</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="max_temperature_copy.html">Max Temperature</a></li>
+                                <li><a href="cloudiness_copy.html">Cloudiness</a></li>
+                                <li><a href="humidity_copy.html">Humidity</a></li>
+                                <li><a href="wind_speed_copy.html">Wind Speed</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="comparison_copy.html">Comparison</a></li>
+                        <li><a href="data_copy.html">Data</a></li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+            <!--/.container-fluid -->
+        </nav>
+        <div class="container">
+            <!-- div class container Pushes the h1 line a little towards the center  -->
+            <h1 class="page-header">Comparison: Latitude vs X</h1>
+            <!-- Allows you to create a paragraph that leads  -->
+            <p class="lead">Click any plot to get in-depth analysis!</p>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-8">
+                        <h5 class="title">vs. Max Temperature</h5>
+                        <a href="./max_temperature_copy.html"><img class="img-fluid" src="Resources/assets/images/Fig1.png" alt="Latitude vs. Max Temperature" height="500"></a>
+                        <!-- <img class="panel" src="Resources/assets/images/Fig1.png" alt="Max Temperature"> -->
+                        </a>
+                        <hr>
+                    </div>
+                    <div class="col-8">
+                        <h5 class="title">vs. Humidity</h5>
+                        <a href="./humidity_copy.html"><img class="img-fluid" src="Resources/assets/images/Fig2.png" alt="Latitude vs. Max Temperature" height="500" ></a>
+                        <!-- <img class="panel" src="Resources/assets/images/Fig2.png" alt="Humidity"> -->
+                        </a>
+                    </div>
+                    <hr>
+                </div>
+                <div class="row">
+                    <div class="col-8">
+                        <h5 class="title">vs. Cloudiness</h5>
+                        <a href="./cloudiness_copy.html"><img class="img-fluid" src="Resources/assets/images/Fig3.png" alt="Latitude vs. Max Temperature" height="500"></a>
+                        <!-- <img class="panel" src="Resources/assets/images/Fig3.png" alt="Cloudiness"> -->
+                        </a>
+                    </div>
+                    <hr>
+                    <div class="col-8">
+                        <h5 class="title">vs. Wind Speed</h5>
+                        <a href="./wind_speed_copy.html"><img class="img-fluid" src="Resources/assets/images/Fig4.png" alt="Latitude vs. Max Temperature" height="500" ></a>
+                        </a>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div style="height:400px"></div>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
